@@ -17,3 +17,12 @@ TEST(HistorianHisteria, Test2)
 
     EXPECT_EQ(historianHisteria(left, right), 11);
 }
+
+TEST(HistorianHisteria, TestPuzzle)
+{
+    std::vector<int32_t> left;
+    std::vector<int32_t> right;
+
+    EXPECT_TRUE(getInput("/Users/loblue/work/aoc/2024/day/1/input.txt", &left, &right));
+    EXPECT_EQ(historianHisteria(left, right), 765748);
+}
